@@ -3,10 +3,10 @@ String Formatting
 """
 
 
-first_name = "Eric"
+first_name = "Paras"
 
 sentence = "Hi {} {}"
-last_name = "Roby"
+last_name = "Jain"
 print(sentence.format(first_name, last_name))
 
 print(f"Hi {first_name} {last_name} I hope you are learning")
