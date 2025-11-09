@@ -1,4 +1,4 @@
-from Enemy import *
+from Enemy import Enemy
 
 zombie = Enemy('Zombie', 10, 1)
 
