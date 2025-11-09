@@ -1,5 +1,5 @@
-from Zombie import *
-from Ogre import *
+from Zombie import Zombie
+from Ogre import Ogre
 
 zombie = Zombie(10, 1)
 

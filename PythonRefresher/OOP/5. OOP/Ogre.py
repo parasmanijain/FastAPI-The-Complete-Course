@@ -1,4 +1,4 @@
-from Enemy import *
+from Enemy import Enemy
 import random
 
 class Ogre(Enemy):

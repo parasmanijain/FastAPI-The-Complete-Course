@@ -1,4 +1,4 @@
-from Enemy import *
+from Enemy import Enemy
 
 class Ogre(Enemy):
     def __init__(self, health_points, attack_damage):

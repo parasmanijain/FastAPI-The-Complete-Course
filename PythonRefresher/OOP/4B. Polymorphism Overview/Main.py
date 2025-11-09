@@ -1,6 +1,6 @@
-from Animal import *
-from Bird import *
-from Dog import *
+from Animal import Animal
+from Bird import Bird
+from Dog import Dog
 
 
 zoo: Animal = []
