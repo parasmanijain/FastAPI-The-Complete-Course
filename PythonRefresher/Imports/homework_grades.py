@@ -1,4 +1,4 @@
-import Imports.grade_average_service as grade_service
+import grade_average_service as grade_service
 
 homework_assignment_grades = {
     'homework_1': 85,
