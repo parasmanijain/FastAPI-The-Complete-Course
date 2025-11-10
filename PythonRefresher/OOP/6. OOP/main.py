@@ -2,6 +2,7 @@ from Zombie import Zombie
 from Ogre import Ogre
 from Enemy import Enemy
 from Hero import Hero
+from Weapon import Weapon
 
 def battle(e1: Enemy, e2: Enemy):
     e1.talk()
