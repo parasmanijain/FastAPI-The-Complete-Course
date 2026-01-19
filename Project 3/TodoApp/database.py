@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 SQLALCHEMY_DATABASE_URL = (
-    "postgresql://postgres:test1234!@localhost/TodoApplicationDatabase"
+    "mysql+pymysql://root:Bhoumiyaji%401001@127.0.0.1:3306/TodoApplicationDatabase"
 )
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
