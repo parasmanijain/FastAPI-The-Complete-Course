@@ -20,7 +20,6 @@ def test_authenticate_user(test_user):
     wrong_password_user = authenticate_user(test_user.username, 'wrongpassword', db)
     assert wrong_password_user is False
 
-
 def test_create_access_token():
     username = 'testuser'
     user_id = 1
@@ -36,7 +35,6 @@ def test_create_access_token():
     assert decoded_token['id'] == user_id
     assert decoded_token['role'] == role
 
-
 @pytest.mark.asyncio
 async def test_get_current_user_valid_token():
     encode = {'sub': 'testuser', 'id': 1, 'role': 'admin'}
@@ -44,7 +42,6 @@ async def test_get_current_user_valid_token():
 
     user = await get_current_user(token=token)
     assert user == {'username': 'testuser', 'id': 1, 'user_role': 'admin'}
-
 
 @pytest.mark.asyncio
 async def test_get_current_user_missing_payload():
@@ -56,10 +53,3 @@ async def test_get_current_user_missing_payload():
 
     assert excinfo.value.status_code == 401
     assert excinfo.value.detail == 'Could not validate user.'
-
-
-
-
-
-
-

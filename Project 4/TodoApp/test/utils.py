@@ -50,7 +50,6 @@ def test_todo():
         connection.execute(text("DELETE FROM todos;"))
         connection.commit()
 
-
 @pytest.fixture
 def test_user():
     user = Users(
@@ -69,9 +68,3 @@ def test_user():
     with engine.connect() as connection:
         connection.execute(text("DELETE FROM users;"))
         connection.commit()
-
-
-
-
-
-
